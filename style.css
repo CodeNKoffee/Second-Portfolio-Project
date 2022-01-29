@@ -1,5 +1,11 @@
 @import url("https://fonts.googleapis.com/css2?family=Habibi&family=Nunito:wght@200;300;500;600;700;800&display=swap");
 
+:root {
+  --dark-purple: #0e000c;
+  --mid-purple: #36002e;
+  --light-purple: #dd60ca;
+}
+
 * {
   margin: 0;
   padding: 0;
@@ -119,7 +125,7 @@ html {
 
 body {
   position: relative;
-  background-color: #0e000c;
+  background-color: var(--dark-purple);
   color: #fff;
   overflow: overlay;
   overflow-x: hidden;
@@ -143,7 +149,7 @@ a {
 }
 
 a:hover {
-  color: #dd60ca;
+  color: var(--light-purple);
 }
 
 .container {
@@ -154,6 +160,10 @@ a:hover {
   width: 100%;
   max-width: 1100px;
   margin: 0 auto;
+}
+
+.no-cursor {
+  cursor: not-allowed;
 }
 
 
@@ -218,14 +228,14 @@ HERO SECTION
   position:absolute;
   width:100%;
   height:100%;
-  -moz-box-shadow:inset 0px 0px 3px 1px #0e000c;
-  -webkit-box-shadow:inset 0px 0px 3px 1px #0e000c;
-  box-shadow:inset 0px 0px 3px 1px #0e000c;
+  -moz-box-shadow:inset 0px 0px 3px 1px #36002e;
+  -webkit-box-shadow:inset 0px 0px 3px 1px #36002e;
+  box-shadow:inset 0px 0px 3px 1px #36002e;
 }
 
 #hero__img {
   position: absolute;
-  box-shadow: 0px 0px 25px 30px #36002e;
+  box-shadow: 0px 0px 25px 30px var(--mid-purple);
 
 }
 
@@ -235,6 +245,12 @@ HERO SECTION
   font-family: "Habibi", serif;
   margin-top: 112px;
   text-align: center;
+  transition: all 300ms ease;
+}
+
+.hero__header:hover {
+  color: var(--mid-purple);
+  transform: scale(1.05);
 }
 
 
@@ -281,7 +297,7 @@ EXPLORE
 
 */
 #explore {
-  background-color: #36002e;
+  background-color: var(--mid-purple);
   text-align: center;
   margin: 0 auto;
   display: flex;
@@ -372,7 +388,7 @@ FOOTER
 }
 
 #footer__img {
-  box-shadow: 0px 0px 25px 30px #36002e;
+  box-shadow: 0px 0px 25px 30px var(--mid-purple);
 }
 
 .footer__content {
@@ -412,7 +428,7 @@ FOOTER
 }
 
 .wave .shape-fill {
-  fill: #36002E;
+  fill: var(--mid-purple);
 }
 
 
