@@ -1,0 +1,421 @@
+@import url("https://fonts.googleapis.com/css2?family=Habibi&family=Nunito:wght@200;300;500;600;700;800&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  /* font-family: "Habibi", serif; */
+  /* font-family: "Nunito", sans-serif; */
+  box-sizing: border-box;
+}
+
+
+/*
+
+BROWSER SCROLLBAR KITS
+
+*/
+
+/* CHROME & SAFARI */
+
+html::-webkit-scrollbar {
+  width: 8px; 
+}
+
+html::-webkit-scrollbar-track {
+background-color: transparent;
+}
+
+html::-webkit-scrollbar-thumb {
+background: #fff;
+border-radius: 8px;
+}
+
+html::-webkit-scrollbar-thumb:hover {
+  background: rgb(100, 100, 100);
+  border-radius: 10px;
+}
+
+html::-webkit-scrollbar-thumb:active {
+  background: #242424;
+  border-radius: 10px;
+}
+
+/* MOZILLA FIREFOX */
+html::-moz-scrollbar {
+  width: 8px; 
+}
+
+html::-moz-scrollbar-track {
+background-color: transparent;
+}
+
+html::-moz-scrollbar-thumb {
+background: #fff;
+border-radius: 8px;
+}
+
+html::-moz-scrollbar-thumb:hover {
+  background: rgb(100, 100, 100);
+  border-radius: 10px;
+}
+
+html::-moz-scrollbar-thumb:active {
+  background: #242424;
+  border-radius: 10px;
+}
+
+
+/* MICROSOFT INTERNET EXPLORER */
+html::-ms-scrollbar {
+  width: 8px; 
+}
+
+html::-ms-scrollbar-track {
+background-color: transparent;
+}
+
+html::-ms-scrollbar-thumb {
+background: #fff;
+border-radius: 8px;
+}
+
+html::-ms-scrollbar-thumb:hover {
+  background: rgb(100, 100, 100);
+  border-radius: 10px;
+}
+
+html::-ms-scrollbar-thumb:active {
+  background: #242424;
+  border-radius: 10px;
+}
+
+/* OPERA */
+html::-o-scrollbar {
+  width: 8px; 
+}
+
+html::-o-scrollbar-track {
+background-color: transparent;
+}
+
+html::-o-scrollbar-thumb {
+background: #fff;
+border-radius: 8px;
+}
+
+html::-o-scrollbar-thumb:hover {
+  background: rgb(100, 100, 100);
+  border-radius: 10px;
+}
+
+html::-o-scrollbar-thumb:active {
+  background: #242424;
+  border-radius: 10px;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  position: relative;
+  background-color: #0e000c;
+  color: #fff;
+  overflow: overlay;
+  overflow-x: hidden;
+  font-family: "Nunito", sans-serif;
+}
+
+nav {
+  position: relative;
+  height: 160px;
+}
+
+li {
+  list-style-type: none;
+}
+
+a {
+  font-weight: 800;
+  color: #fff;
+  text-decoration: none;
+  transition: all 300ms ease;
+}
+
+a:hover {
+  color: #dd60ca;
+}
+
+.container {
+  padding: 56px 0;
+}
+
+.row {
+  width: 100%;
+  max-width: 1100px;
+  margin: 0 auto;
+}
+
+
+/*
+
+NAVIGATION BAR
+
+*/
+.nav__container {
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+}
+
+.nav__links {
+  margin: 4px;
+  padding: 4px 48px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.nav__link {
+  padding: 2px;
+  font-size: 16px;
+  transition: all 300ms ease;
+}
+
+.nav__link:hover {
+  transform: scale(1.2);
+}
+
+.nav__link--outer {
+  margin-top: 24px;
+}
+
+#peace {
+  font-size: 48px;
+}
+
+
+/*
+
+HERO SECTION
+
+*/
+#hero {
+  display: flex;
+  justify-content: center;
+}
+
+.shadow {
+  display:block;
+  position:relative;
+}
+
+.shadow:before {
+  display:block;
+  content:'';
+  position:absolute;
+  width:100%;
+  height:100%;
+  -moz-box-shadow:inset 0px 0px 3px 1px #0e000c;
+  -webkit-box-shadow:inset 0px 0px 3px 1px #0e000c;
+  box-shadow:inset 0px 0px 3px 1px #0e000c;
+}
+
+#hero__img {
+  position: absolute;
+  box-shadow: 0px 0px 25px 30px #36002e;
+
+}
+
+.hero__header {
+  position: absolute;
+  font-size: 80px;
+  font-family: "Habibi", serif;
+  margin-top: 112px;
+  text-align: center;
+}
+
+
+/*
+
+SECTION GENERIC
+
+*/
+.title {
+  font-size: 48px;
+  font-weight: 800;
+  margin-bottom: 64px;
+}
+
+.para {
+  font-size: 24px;
+  font-weight: 400;
+  margin-bottom: 24px;
+}
+
+.sub__text {
+  font-size: 16px;
+  font-weight: 700;
+}
+
+
+/*
+
+INTRODUCTION
+
+*/
+#intro {
+  position: relative;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  margin-top: 900px;
+}
+
+
+/*
+
+EXPLORE
+
+*/
+#explore {
+  background-color: #36002e;
+  text-align: center;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.book__list, .journal__options {
+  width: 100%;
+  margin: 104px 0 48px 0;
+  display: flex;
+  justify-content: space-between;
+}
+
+.book {
+  width: calc(100% / 3);
+}
+
+.book__wrapper {
+  margin: 0 40px;
+}
+
+.qoutes__wrapper {
+  width: 100%;
+  margin: 72px auto;
+  padding: 16px 32px;
+  display: flex;
+  align-items: start;
+}
+
+.qoute__wrapper {
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.person {
+  margin-bottom: 24px;
+  padding: 0 40px;
+  display: flex;
+  align-items: center;
+}
+
+.person__name {
+  margin-left: 32px;
+  font-size: 32px;
+  font-weight: 700;
+  text-align: start;
+}
+
+.qoute {
+  padding: 0 96px;
+}
+
+
+/*
+
+JOURNAL
+
+*/
+#journal {
+  text-align: center;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.journal__option {
+  width: 50%;
+  margin: 0 40px;
+}
+
+
+/*
+
+FOOTER
+
+*/
+#footer {
+  text-align: center;
+  margin: 0 auto;
+  display: flex;
+  align-items: end;
+  justify-content: center;
+}
+
+#footer__img {
+  box-shadow: 0px 0px 25px 30px #36002e;
+}
+
+.footer__content {
+  position: absolute;
+  font-weight: 900;
+  color: #fff;
+  margin-bottom: 32px;
+  display: flex;
+}
+
+.footer__links {
+  display: flex;
+}
+
+.footer__link {
+  margin: 0 32px;
+}
+
+.footer__link--anchor {
+  color: #fff;
+}
+
+.wave {
+
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  overflow: hidden;
+  line-height: 0;
+}
+
+.wave svg {
+
+  display: block;
+  width: calc(100% + 1.3px);
+  height: 268px;
+}
+
+.wave .shape-fill {
+  fill: #36002E;
+}
+
+
+
+
+
