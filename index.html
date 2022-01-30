@@ -45,6 +45,27 @@
         </ul>
         <img id="nav__underbar" src="./Assets/Navigation Underbar.svg" alt="Nav Underbar">
       </div>
+      <div class="nav__container--mobile">
+        <button class="btn__menu" onclick="openMenu()">
+          <i class="fas fa-bars"></i>
+        </button>
+        <div class="menu__backdrop">
+          <button class="btn__menu btn__menu--close" onclick="closeMenu()">
+            <i class="fas fa-times"></i>
+          </button>
+          <ul class="menu__links">
+            <li class="menu__list">
+              <a class="menu__link" onclick="closeMenu()">Home</a>
+            </li>
+            <li class="menu__list">
+              <a class="menu__link" onclick="closeMenu()">About</a>
+            </li>
+            <li class="menu__list">
+              <a class="menu__link" onclick="closeMenu()">Conatct</a>
+            </li>
+          </ul>
+        </div>
+      </div> 
     </nav>
   </section>
 
@@ -167,9 +188,10 @@
   </section>
 
   <footer id="footer">
-    <img id="footer__img" src="./Assets/footer-Image (1).png" alt="Your Own Path">
+    <img id="footer__img" src="./Assets/FooterImagee.png" alt="Your Own Path">
+    <p class="footer__qoute">Have the courage to follow<br>your heart and intuition.<br>They somehow know what<br>you truly want to become.</p>
     <div class="footer__content">
-      <span>© 2022 ANNAFS. All Rights Reserved.&nbsp;&nbsp;</span>
+      <span class="copyright">© 2022 ANNAFS. All Rights Reserved.&nbsp;&nbsp;</span>
       <span class="footer__content--separator">&nbsp;|&nbsp;</span>
       <ul class="footer__links">&nbsp;&nbsp;
         <li class="footer__link footer__link--outer">
