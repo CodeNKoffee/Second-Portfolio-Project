@@ -258,6 +258,7 @@ NAVIGATION BAR
   right: 0;
   bottom: 0;
   z-index: 100;
+  min-height: 100vh;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -901,8 +902,7 @@ RESPONSIVENESS
   }
 
   /* Card Hover Animation */
-.journal__option {
-  padding: 8rem 0 0;
+  .journal__option {
+    padding: 8rem 0 0;
+  }
 }
-}
-
