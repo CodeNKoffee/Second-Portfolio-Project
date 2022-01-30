@@ -1,7 +1,15 @@
-//VARIABLES
+//DECLARATIONS
 const targets = document.querySelectorAll("img");
 
 //FUNCTIONS
+//Navigation Bar & Hamburger
+function openMenu(){
+  document.body.classList += " menu--open"
+}
+
+function closeMenu(){
+  document.body.classList.remove('menu--open')
+}
 
 //Fade-In Animation
 const lazyLoad = target => {
