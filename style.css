@@ -501,6 +501,11 @@ JOURNAL
   justify-content: center;
 }
 
+.journal__options {
+  display: flex;
+  align-items: center;
+}
+
 .journal__option {
   width: 305px;
   height: 365px;
@@ -706,6 +711,46 @@ RESPONSIVENESS
 
   .nav__container {
     max-width: 800px;
+  }
+
+  .qoute__wrapper {
+    min-height: 318px;
+  }
+
+  .person__name {
+    margin-left: 32px;
+    font-size: 32px;
+  }
+
+  .qoute {
+    font-size: 16px;
+    font-weight: 600;
+    margin: 0 auto;
+    width: 33ch;
+  }
+
+  .footer__content {
+    max-width: 900px;
+  }
+
+  .copyright, .footer__link {
+    font-size: 16px;
+    font-weight: 500;
+  }
+
+  .footer__link {
+    font-weight: 600;
+    margin: 0 24px;
+  }
+}
+
+@media(max-width: 768px) {
+  .row {
+    max-width: 732px;
+  }
+
+  .nav__container {
+    max-width: 750px;
   }
 
   .qoute__wrapper {
