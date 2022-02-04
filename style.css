@@ -421,7 +421,7 @@ EXPLORE
   width: 100%;
   margin: 104px 0 48px 0;
   display: flex;
-  justify-content: space-between;
+  justify-content: space-around;
 }
 
 .book__list {
