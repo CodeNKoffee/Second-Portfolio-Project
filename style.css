@@ -380,6 +380,7 @@ SECTION GENERIC
   font-size: 24px;
   font-weight: 400;
   margin-bottom: 24px;
+  padding: 4px 32px;
 }
 
 .sub__text {
