@@ -432,6 +432,8 @@ EXPLORE
 
 .book {
   width: calc(100% / 3);
+  display: flex;
+  justify-content: center;
 }
 
 .book__wrapper {
