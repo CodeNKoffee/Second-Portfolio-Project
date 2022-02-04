@@ -125,10 +125,12 @@ html::-o-scrollbar-thumb:active {
 
 html {
   scroll-behavior: smooth;
+  overflow-x: hidden;
 }
 
 body {
   position: relative;
+  overflow-x: hidden;
   background-color: var(--dark-purple);
   color: #fff;
   overflow: overlay;
