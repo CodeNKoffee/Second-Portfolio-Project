@@ -931,6 +931,13 @@ RESPONSIVENESS
   }
 }
 
+/* Iphones XR & Above */
+@media(max-width: 414px) {
+  .footer__qoute {
+    left: 10%;
+  }
+}
+
 /* Narrow Phones */
 @media(max-width: 324px) {
   * {
