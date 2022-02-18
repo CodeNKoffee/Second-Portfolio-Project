@@ -711,6 +711,7 @@ RESPONSIVENESS
   #footer__img {
     background-size: cover;
     background-repeat: no-repeat;
+    width: 100%;
   }
 }
 
