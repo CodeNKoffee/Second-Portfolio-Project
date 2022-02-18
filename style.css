@@ -347,8 +347,6 @@ HERO SECTION
 #hero__img {
   position: absolute;
   box-shadow: 0px 0px 25px 30px var(--mid-purple);
-  width: 100%;
-
 }
 
 .hero__header {
@@ -664,7 +662,6 @@ FOOTER
 
 #footer__img {
   box-shadow: 0px 0px 25px 30px var(--mid-purple);
-  width: 100%;
 }
 
 .footer__qoute {
@@ -704,6 +701,18 @@ FOOTER
 RESPONSIVENESS
 
 */
+/* Large Resolutions */
+@media(min-width: 1440px) {
+  #hero__img {
+    width: 100%;
+    max-height: 1000px;
+  }
+
+  #footer__img {
+    background-size: cover;
+    background-repeat: no-repeat;
+  }
+}
 
 /* 3 : 2 Laptops & Small Sized Computers*/
 @media(max-width: 900px) {
